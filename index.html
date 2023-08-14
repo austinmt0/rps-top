@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="style.css"> 
+  <script src="js-file.js" defer></script>
+</head>
+<body>
+    <div class="score-container">
+        <p id="scoreDisplay">Game Score: User 0 - Computer 0</p>
+    </div>
+    <div class="button-container">
+        <button class="button" id="buttonRock">Rock</button>
+        <button class="button" id="buttonPaper">Paper</button>
+        <button class="button" id="buttonScissors">Scissors</button>
+    </div>
+    <div id="roundResult"></div>
+    <div id="resultMessage"></div>
+    <button id="resetButton">Reset Game</button>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  <script>
+
+    function getComputerSelection() {
+        const randomNumber = Math.random();
+
+        if (randomNumber < 0.33) {
+            return 'rock';
+          } else if (randomNumber < 0.66) {
+            return 'paper'; 
+          } else {
+            return 'scissors'; 
+          }
+        }    
+
+    function playRound(computerSelection, userSelection) {
+        if (computerSelection === userSelection) {
+            return 'tie'; 
+        } else if (
+            (computerSelection === 'rock' && userSelection === 'scissors') || 
+            (computerSelection === 'scissors' && userSelection === 'paper') ||
+            (computerSelection === 'paper' && userSelection === 'rock') 
+        ) {
+            return 'computer'
+        } else {
+            return 'user'; 
+        }
+    }
+    
+    function game() {
+        let userScore = 0; 
+        let computerScore = 0; 
+
+        for (let round = 1; round <= 5; round++) {
+            const userSelection = prompt(`Round ${round}: Enter your choice (rock, paper, scissors): `); 
+            const userSelectionLowercase = userSelection.toLowerCase(); 
+
+            const computerSelection = getComputerSelection(); 
+
+            const winner = playRound(computerSelection, userSelectionLowercase); 
+            if (winner === 'user') {
+                userScore++;
+            } else if (winner === 'computer'){
+                computerScore++; 
+            }
+            console.log(`Round ${round}: You chose ${userSelection}, computer chose ${computerSelection}. ${winner === 'tie' ? "It's a tie!" : winner === 'user' ? 'You Win!' : 'Computer wins!'}`);  
+        }
+
+        if (userScore > computerScore) {
+            console.log(`You win the game with a score of ${userScore}-${computerScore}.`); 
+        } else if (computerScore > userScore) {
+            console.log(`Computer wins the game with a score of ${computerScore}-${userScore}.`); 
+        } else {
+            console.log(`The game is a tie with a score of ${userScore}-${computerScore}.`); 
+        }
+     }
+
+game(); 
+
+  </script>
+
+ -->
+</body>
+</html>
